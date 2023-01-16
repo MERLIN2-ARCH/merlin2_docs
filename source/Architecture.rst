@@ -35,19 +35,15 @@ text-to-speech; while the temporal lobe is in charge of the audio processing, sp
 
 .. image:: ../images/cerebrum.png
 
-
-
 When moving all these cognitive functions to a classic software perspective we find 
 the folowing diagram. The figure presents in detail the MERLIN2 architecture technically 
 divided into four layers associated with hybrid and multi-layer cognitive proposals. 
-
 
 .. image:: ../images/architecture.png
 
 
 Mission Layer
 ============
-
 
 This layer is in charge of generating the high-level goals of the robots. 
 These goals are related to robot duty, particular works that are internally 
@@ -69,23 +65,11 @@ dispatcher, and execution.
 
 MERLIN2 proposes a set of five components for this layer:
 
-* **Knowledge Base**: this component is the knowledge base of KANT, which 
-corresponds with long-term memory. It stores the knowledge of the environment. 
-There are two types of knowledge base depending on the storage type: a ROS 2 
-node that stores in process memory the knowledge and a MongoDB database, which 
-is more persistent.
-
+* **Knowledge Base**: this component is the knowledge base of KANT, which corresponds with long-term memory. It stores the knowledge of the environment. There are two types of knowledge base depending on the storage type: a ROS 2 node that stores in process memory the knowledge and a MongoDB database, which  is more persistent.
 * **PDDL Generator**: this component is in charge of generating the PDDL text from the knowledge base.
-
-* **Planner**: this component uses the PDDL text to create plans. Several PDDL 
-planners can be used. The available planners are POPF, SMTP, unified-planning 
-and VHPOP.
-
-* **Plan Dispatcher**: this component is in charge of executing the actions 
-of the generated plan. It also has to cancel the current action if needed.   
-
-* **Executor**: this component is a facade between this layer and the 
-Mission Layer. It executed its component of this layer and cancel the Plan Dispatcher.
+* **Planner**: this component uses the PDDL text to create plans. Several PDDL planners can be used. The available planners are POPF, SMTP, unified-planning and VHPOP.
+* **Plan Dispatcher**: this component is in charge of executing the actions of the generated plan. It also has to cancel the current action if needed.   
+* **Executor**: this component is a facade between this layer and the Mission Layer. It executed its component of this layer and cancel the Plan Dispatcher.
 
 
 Executive Layer
