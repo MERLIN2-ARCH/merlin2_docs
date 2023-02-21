@@ -13,6 +13,7 @@ Citations
 =========
 
 .. code-block:: bibtex
+
    @article{GONZALEZSANTMARTA2023100477,
       title = {MERLIN2: MachinEd Ros 2 pLanINg},
       journal = {Software Impacts},
