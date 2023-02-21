@@ -13,6 +13,21 @@ Citations
 =========
 
 .. code-block:: bibtex
+   @article{GONZALEZSANTMARTA2023100477,
+      title = {MERLIN2: MachinEd Ros 2 pLanINg},
+      journal = {Software Impacts},
+      volume = {15},
+      pages = {100477},
+      year = {2023},
+      issn = {2665-9638},
+      doi = {https://doi.org/10.1016/j.simpa.2023.100477},
+      url = {https://www.sciencedirect.com/science/article/pii/S2665963823000143},
+      author = {Miguel Á. González-Santmarta and Francisco J. Rodríguez-Lera and Camino Fernández-Llamas and Vicente Matellán-Olivera},
+      keywords = {Cognitive robotics, Hybrid architecture, Symbolic planning, Finite state-machines, Reactivity, Knowledge managing},
+      abstract = {Any service robot should be able to make decisions and schedule tasks to reach predefined goals such as opening a door or assisting users at home. However, these processes are not single short-term tasks anymore and it is required to set long-term skills for establishing a control architecture that allows robots to perform daily tasks. This paper presents MERLIN2, a hybrid cognitive architecture based on symbolic planning and state machine decision-making systems that allows performing robot behaviors. The architecture can run in any robot running ROS 2, the latest version of the Robot Operative System. MERLIN2 is available at https://github.com/MERLIN2-ARCH/merlin2.}
+   }
+
+.. code-block:: bibtex
 
    @article{Gonz_lez_Santamarta_2020,
       doi = {10.3390/app10175989},
