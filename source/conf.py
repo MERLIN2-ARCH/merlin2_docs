@@ -60,6 +60,6 @@ html_static_path = ["../images"]
 
 html_logo = "../images/logo.png"
 html_theme_options = {
-    "logo_only": True,
+    "logo_only": False,
     "display_version": False,
 }
