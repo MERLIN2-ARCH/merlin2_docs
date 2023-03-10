@@ -34,7 +34,7 @@ This `basic example <https://github.com/MERLIN2-ARCH/merlin2/blob/main/merlin2_a
 presents the same PDDL durative action as the previous PDDL version but using MERLIN2. 
 There are 5 methods to override:
 
-* **run_action**: this callback is used to execute the code of the action.
+* **run_action**: this callback is used to execute the code of the action. The PlanAction goal arg is the action planned by the planner (name of the PDDL action + PDDL objects).
 * **cancel_action**: this callback is used to cancel the action execution.
 * **create_parameters**: this method is used to return the list of parameters of the action (PddlObjectDto).
 * **create_conditions**: this method is used to return the list of conditions of the action (PddlConditionEffectDto).
@@ -139,6 +139,8 @@ presents the same PDDL durative action as the previous one but using state machi
 In this version, the action is built using states. 
 run_action and cancel_action methods are not necessary because the execution depends on the execution of the state machine. 
 This means that run_action executes the state machine and cancel_action stops the state machines, stopping the current state, transparently for the user.
+Besides, run_action write the PlanAction goal into the blackboard. 
+As a result, the goal can be used in the states of the state machine.
 
 There are some basics states that can be accessed from `Merlin2BasicStates <https://github.com/MERLIN2-ARCH/merlin2/blob/main/merlin2_arch/merlin2_executive_layer/merlin2_fsm_action/merlin2_fsm_action/merlin2_state_factory/merlin2_basic_states.py>`_
 , but new ones can be implemented using the state classes from YASMIN. The basic states are:

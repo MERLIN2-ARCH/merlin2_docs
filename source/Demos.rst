@@ -26,3 +26,16 @@ The RB1 robot will start driving to specific points in the world. Half of the go
     $ ros2 launch merlin2_demo merlin2_demo2.launch.py
 
 .. image:: ../images/demo2.gif
+
+
+Demo 3
+======
+
+The RB1 robot waits until it hears the sound of the doorbell, navigate to the door, attends the person and returns to the living room.
+
+.. code-block:: bash
+
+    $ ros2 launch rb1_gazebo granny.launch.py
+    $ ros2 launch merlin2_demo merlin2_demo3.launch.py
+
+.. image:: ../images/demo3.gif
