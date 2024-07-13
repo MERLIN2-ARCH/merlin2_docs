@@ -201,7 +201,7 @@ There are some basics states that can be accessed from `Merlin2BasicStates <http
 
       # callback for YASMIN CbState
       def prepapre_goal(self, blackboard: Blackboard) -> str:
-          blackboard.destination = blackboard.merlin2_action_goal.objects[1]
+          blackboard["destination"] = blackboard["merlin2_action_goal"].objects[1]
           return "valid"
 
       # add PDDL parameters
